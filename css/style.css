@@ -122,6 +122,56 @@ body {
     font-size: 20px;
 }
 
+.relation {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0f0d4;
+
+}
+
+.relation h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #729224;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.relation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.relation li a {
+    display: block;
+    padding: 5px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.relation li a:hover {
+    text-decoration: underline;
+}
+
+.relation ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.relation li {
+    float: left;
+    width: 25%;
+}
+
+.relation img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
 /*사이드 메뉴*/
 .sidemenu {
     margin-bottom: 30px;
@@ -170,14 +220,16 @@ body {
 
 .recommend li a {
     display: block;
-    padding: 5px;
+    padding: 0px;
     color: #000000;
     font-size: 14px;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 .recommend li a:hover {
     background-color: #eeeeee;
+    opacity: 0.8;
 }
 
 .recommend h1 {
@@ -186,6 +238,32 @@ body {
     border-bottom: dotted 2px #dddddd;
     color: #666666;
     font-size: 18px;
+}
+
+.recommend img {
+    width: 100%;
+    height: auto;
+    border: none;
+    vertical-align: bottom;
+}
+
+.recommend .text {
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+}
+
+/*추천 기사 메뉴의 글자를 중첩하는 설정*/
+.recommend a {
+    position: relative;
+}
+
+.recommend .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .popular {
@@ -201,7 +279,8 @@ body {
 .popular li a {
     display: block;
     padding: 5px;
-    color: #000000;
+    color: #2288bb;
+    border-bottom: dotted 1px #dddddd;
     font-size: 14px;
     text-decoration: none;
 }
@@ -216,6 +295,34 @@ body {
     border-bottom: dotted 2px #dddddd;
     color: #666666;
     font-size: 18px;
+}
+
+.popular img {
+    float: left;
+    width: 60px;
+}
+
+.popular li a img {
+    border: none;
+}
+
+.popular a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.popular .text {
+    float: none;
+    width: auto;
+    margin-left: 60px;
+    padding-left: 15px;
+}
+
+.popular span {
+    display: block;
+    color: #666666;
+    font-size: 12px;
 }
 /*저작권*/
 .copyright p {
