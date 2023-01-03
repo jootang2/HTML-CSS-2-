@@ -166,5 +166,16 @@ body {
 /* ##################1190px 이상#####################*/
 @media (min-width: 1190px) {
 
+    /*전체 너비를 고정*/
+    .box3, .box4, .boxA-inner, .box5-inner {
+        width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxA {
+        margin-bottom: 20px;
+        border-bottom: solid 1px #dddddd;
+    }
 }
 
