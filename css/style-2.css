@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: '맑은 고딕';
+'Apple SD Gothic Neo', sans-serif
+}
+
+/* ##################768px 이상#####################*/
+@media(min-width: 768px) {
+
+    /*BOX1과 BOX2를 가로 정렬하는 설정*/
+    .boxA:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+
+    .box1 {
+        float: left;
+        width: 50%;
+    }
+
+    .box2 {
+        float: left;
+        width: 50%;
+    }
+
+}

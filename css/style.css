@@ -382,6 +382,36 @@ body {
     vertical-align: bottom;
 }
 
+/*배지*/
+.badge {
+    width: 120px;
+    height: 120px;
+    background-color: #00a0e9;
+    color: #ffffff;
+    padding-top: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 60px;
+    box-shadow: 0 0 4px #aaaaaa;
+}
+
+.badge i {
+    display: block;
+    font-size: 40px;
+}
+
+/*배지의 표시 위치*/
+.pickup {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 44%;
+    right: -15px;
+}
+
+/*페이지네이션*/
 .pagination {
     text-align: center;
 }
@@ -491,6 +521,14 @@ body {
     .box3 {
         padding-top: 25px;
     }
+
+    /*배지*/
+    .badge {
+        transform: scale(0.5);
+        transform-origin: right top;
+        top: -8px;
+        right: 10px;
+    }
 }
 
 /* ############ 600px 이상 ########### */
@@ -553,6 +591,12 @@ body {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
+    }
+
+    /*배지의 표시 위치*/
+    .badge {
+        top: 30%;
+        right: 15px;
     }
 }
 
