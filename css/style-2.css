@@ -17,34 +17,7 @@ body {
 }
 
 /*내비게이션*/
-.menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
-.menu li a {
-    display: block;
-    padding: 10px 15px;
-    color: #000000;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.menu li a:hover {
-    background-color: #eeeeee;
-}
-
-.menu ul:after {
-    display: block;
-    content: "";
-    clear: both;
-}
-
-.menu li {
-    float: left;
-    width: auto;
-}
 
 /*헤더 그림*/
 .topimg {
@@ -299,9 +272,107 @@ body {
 
 }
 
+/* ##################767px 이하#####################*/
+@media (max-width: 767px) {
+
+    /*토글 버튼*/
+
+    #menubtn {
+        padding: 6px 12px;
+        border: solid 1px #aaaaaa;
+        border-radius: 5px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    #menubtn:hover {
+        background-color: #dddddd;
+    }
+
+    #menubtn:focus {
+        outline: none;
+    }
+
+    #menubtn i {
+        color: #888888;
+        font-size: 18px;
+    }
+
+    #menubtn span {
+        display: inline-block;
+        text-indent: -9999px;
+    }
+
+    /*네비게이션 메뉴(세로 정렬)*/
+    #menu {
+        display: none;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 5px;
+        color: #000000;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .menu li a:hover {
+        background-color: #eeeeee;
+    }
+}
+
+
 
 /* ##################768px 이상#####################*/
 @media (min-width: 768px) {
+
+    /*토글 버튼*/
+    #menubtn {
+        display: none;
+    }
+
+    /*네비게이션*/
+    #menu {
+        display: block !important;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 10px 15px;
+        color: #000000;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .menu li a:hover {
+        background-color: #eeeeee;
+    }
+
+    .menu ul:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+
+    .menu li {
+        float: left;
+        width: auto;
+    }
 
     /*BOX1과 BOX2를 가로 정렬하는 설정*/
     .boxA:after {
