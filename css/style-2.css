@@ -214,11 +214,56 @@ body {
     border-width: 15px;
     margin-left: -15px;
 }
+/*기사*/
+.story h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+    padding-left: 20px;
+    border-left: solid 20px #c50018;
+    font-weight: normal;
+}
+
+.story h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
+
+.story p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/*사이드 메뉴*/
+.sidemenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidemenu li a {
+    display: block;
+    padding: 5px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sidemenu li a:hover {
+    background-color: #eeeeee;
+}
+
 /*저작권*/
 .copyright p {
     margin: 0;
     color: #666666;
     font-size: 14px;
+}
+
+/*BOX A 아래에 테두리 삽입(콘텐츠 페이지만)*/
+.contents .boxA {
+    border-bottom: solid 1px #dddddd;
 }
 
 .box5 {
@@ -228,7 +273,7 @@ body {
 }
 
 /*박스의 왼쪽 오른쪽*/
-.boxA, .box4, .box5, .box6 {
+.boxA, .box4, .box5, .box6, .box7 {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -254,6 +299,11 @@ body {
 
 .box6-1, .box6-2, .box6-3 {
     padding-bottom: 10px;
+}
+
+.box7 {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 /* ##################599px 이하#####################*/
@@ -334,7 +384,6 @@ body {
 
 /* ##################768px 이상#####################*/
 @media (min-width: 768px) {
-
     /*토글 버튼*/
     #menubtn {
         display: none;
@@ -432,13 +481,33 @@ body {
         float: left;
         width: 32%;
     }
+
+    /*box7-1과 box7-2를 가로 정렬하는 설정*/
+
+    .box7:after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+
+    .box7-1 {
+        float: right;
+        width: 70%;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+
+    .box7-2 {
+        float: right;
+        width: 30%;
+    }
 }
 
 /* ##################1190px 이상#####################*/
 @media (min-width: 1190px) {
 
     /*전체 너비를 고정*/
-    .box3, .box4, .boxA-inner, .box5-inner, .box6 {
+    .box3, .box4, .boxA-inner, .box5-inner, .box6, .box7 {
         width: 1140px;
         margin-left: auto;
         margin-right: auto;
